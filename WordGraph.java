@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class WordGraph {
-    // 字段 'graph' 设为 final，符合 IDE 优化建议
+    // 字段 'graph' 设为 final，以符合 IDE 优化建议
     private static final Map<String, Map<String, Integer>> graph = new HashMap<>();
 
     public static void main(String[] args) {
