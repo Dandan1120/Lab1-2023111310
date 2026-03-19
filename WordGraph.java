@@ -11,7 +11,7 @@ public class WordGraph {
         String filePath = scanner.nextLine();
 
         try {
-            // 功能需求1：读入文本并生成有向图 [cite: 40]
+            // 功能需求1：读入文本并生成一张有向图 [cite: 40]
             buildGraph(filePath);
             System.out.println("有向图构建成功！");
 
