@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class WordGraph {
-    // 字段 'graph' 设为 final，以符合 IDE 优化建议
+    // 字段 'graph' 设为 final，符合 IDE 优化建议
     private static final Map<String, Map<String, Integer>> graph = new HashMap<>();
 
     public static void main(String[] args) {
@@ -11,7 +11,13 @@ public class WordGraph {
         String filePath = scanner.nextLine();
 
         try {
+<<<<<<< HEAD
             // 功能需求1：读入文本并生成一张有向图 [cite: 40]
+=======
+ HEAD
+            // 功能需求1：读入文本并生成相应的有向图 [cite: 40]
+
+>>>>>>> B1
             buildGraph(filePath);
             System.out.println("有向图构建成功！");
 
@@ -56,7 +62,7 @@ public class WordGraph {
                     case 4:
                         System.out.print("输入起点: ");
                         String start = scanner.next();
-                        System.out.print("输入终点(若只查起点到所有点的路径请直接回车或输入任意非图中词): ");
+                        System.out.print("输入终点: ");
                         // 注意：这里可以根据手册可选功能 [cite: 153] 进一步扩展
                         String end = scanner.next();
                         System.out.println(calcShortestPath(start, end)); // [cite: 143]
