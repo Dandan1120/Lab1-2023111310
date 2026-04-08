@@ -3,7 +3,7 @@ import java.io.*;
 
 public class WordGraph {
     // 字段 'graph' 设为 final，符合 IDE 优化建议
-    private static final Map<String, Map<String, Integer>> graph = new HashMap<>();
+     static final Map<String, Map<String, Integer>> graph = new HashMap<>();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
